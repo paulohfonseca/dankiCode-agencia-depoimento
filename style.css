@@ -215,16 +215,17 @@ section.starProject .bannerProject {
 
 .bannerProject h2{
     font-size: 4rem;
+    text-align: center;
     font-weight: normal;
     color: #ffffff;
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .bannerProject p{
     font-size: 2rem;
     color: #ffffff;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
 }
 
 .bannerProject button {
@@ -241,15 +242,12 @@ section.starProject .bannerProject {
 section.benefits {
     width: 100%;
     display: flex;
-    margin: 7rem 0;
+    padding: 5rem 4%;
 }
 
 .benefits .benefitsList {
     display: flex;
     flex-direction: column;
-
-    padding-inline: 4%;
-    width: 50%;
 }
 
 .benefits .benefitsList h2 {
@@ -270,6 +268,7 @@ section.benefits {
     font-size: 1.6rem;
     position: relative;
     top: -1rem;
+    padding-right: 5rem;
 }
 
 .benefitsList button {
@@ -281,9 +280,7 @@ section.benefits {
     color: #fff;
 }
 
-.benefits .imgBenefits {
-    width: 50%;
-}
+
 
 
 
@@ -525,20 +522,19 @@ footer ul li a.contact-btn {
         gap: 5rem;
     }
 
+    .bannerProject h2{
+        font-size: 3.5rem;
+        padding-inline: 2rem;
+    }
+
     section.benefits {
-        width: 100%;
-        display: flex;
         flex-direction: column;
-        margin: 7rem 0;
     }
 
     .benefits .benefitsList {
         display: flex;
         flex-direction: column;
         align-items: center;
-    
-        padding: 0 4%;
-        width: 100%;
     }
 
     .benefits .imgBenefits {
