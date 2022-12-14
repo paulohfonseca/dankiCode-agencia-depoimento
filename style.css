@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Geral =============================== */
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 0.85rem;
+}
+
+.center {
+    max-width: 110rem;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/* Home =============================== */
+section.main {
+    background-image: url('./assets/bg.svg');
+    background-position: center;
+    background-size: cover;
+    min-height: 70rem;
+    padding: 2rem 0 8rem 0;
+}
+
+header.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+header.menu nav ul {
+    display: flex;
+    gap: 2rem;
+
+    transition: 0.2s;
+}
+
+/* Button Menu ========================= */
+nav button#btnMobile {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#hamburger {
+    display: block;
+    width: 25px;
+    border-top: 3px solid #fff;
+    background-color: none;}
+
+#hamburger::after, #hamburger::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-top: 5px;
+    
+    position: relative;
+    transition: 0.4s;
+}
+
+#nav.active #hamburger {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -8px;
+}
+
+
+.menu ul li a{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover{
+    border-bottom: 2px solid #FFDD33;
+}
+
+.menu ul li a.contact-btn {
+    background-color: #0F3FD3;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+.mockup {
+    width: 100%;
+    text-align: center;
+
+    padding-top: 10rem;
+
+    color: #fff;
+}
+
+.mockup h1 {
+    font-size: 4rem;
+}
+
+.mockup p {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.picturesBrands {
+    display: flex;
+    padding-block: 9rem;
+}
+
+.picturesBrands img {
+    width: calc(100% / 5);
+}
+
+section.becauseWe {
+    width: 100%;
+    text-align: center;
+    background-color: #FBFCFE;
+
+    padding: 10rem 2%;
+}
+
+.becauseWe h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+
+    padding-bottom: 1.6rem;
+}
+
+.becauseWe p {
+    font-size: 1.6rem;
+    color: #252525;
+}
+
+.differentials {
+    display: flex;
+    gap: 1rem;
+
+    padding-top: 7rem;
+}
+
+.boxDifferentials {
+
+    text-align: left;
+
+    padding: 2rem 2rem;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1rem;
+}
+
+.boxDifferentials img {
+    max-width: 10rem;
+}
+
+.boxDifferentials h3 {
+    font-size: 2rem;
+}
+
+.boxDifferentials p {
+    font-size: 1.4rem;
+    color: #ccc;
+
+    padding-top: 1.5rem;
+}
+
+section.starProject .bannerProject {
+    background-image: url('./assets/banner_meio.svg');
+    background-size: cover;
+
+    min-height: 30rem;
+
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerProject h2{
+    font-size: 4rem;
+    font-weight: normal;
+    color: #ffffff;
+
+    margin-bottom: 1rem;
+}
+
+.bannerProject p{
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+}
+
+.bannerProject button {
+    background-color: #ffdd33;
+    color: #0f3fd3;
+    font-weight: bold;
+    font-size: 1.8rem;
+    
+    border: none;
+    border-radius: 0.85rem;
+    padding: 1rem;
+}
+
+section.benefits {
+    width: 100%;
+    display: flex;
+    margin: 7rem 0;
+}
+
+.benefits .benefitsList {
+    display: flex;
+    flex-direction: column;
+
+    padding-inline: 4%;
+    width: 50%;
+}
+
+.benefits .benefitsList h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.benefits .benefitsList ul li{
+    display: flex;
+    align-items: center;
+}
+
+.benefits .benefitsList ul li img{
+    width: 10rem;
+}
+
+.benefitsList ul li p{
+    font-size: 1.6rem;
+    position: relative;
+    top: -1rem;
+}
+
+.benefitsList button {
+    width: 20rem;
+
+    padding: 1.6rem;
+
+    background-color: #0f3fd3;
+    color: #fff;
+}
+
+.benefits .imgBenefits {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.slide-container {
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 4rem 2% 6rem;
+    width: 100%;
+}
+
+.slide-container h2 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+
+}
+
+#cards {
+   display: flex;
+}
+
+#cards .card {
+    width: 40%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: none;
+    
+    text-align: center;
+    
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+
+#cards .card img.photo-perfil {
+    width: 9rem;
+    height: 9rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#cards .card h3 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+#cards .card small {
+    display: block;
+    font-size: 1.4rem;
+    color: #8b8a8a;
+    margin-top: 0.575rem;
+}
+
+#cards .card p {
+    font-size: 1.6rem;
+    margin-top: 0.875rem;
+}
+
+#cards .card img.stars {
+    width: 9rem;
+    margin-top: 1.5rem;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.slider span {
+    width: 15px;
+    height: 15px;
+    background-color: #707070;
+    border-radius: 50%;
+
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider span.active{
+    background-color: #252525;
+}
+
+section.contact {
+    padding-block: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    width: 60%;
+}
+
+form input {
+    height: 4rem;
+    padding-left: 0.875rem;
+    background-color: #fcfdff;
+    border: 1px solid #c3cce8;
+    border-radius: 1rem;
+
+    font-size: 1.6rem;
+
+}
+
+form textarea {
+    width: 100%;
+    height: 12rem;
+
+    resize: vertical;
+    padding: 0.875rem;
+
+    background-color: #fcfdff;
+    border: 1px solid #c3cce8;
+
+    font-size: 1.6rem;
+}
+
+form input[type=submit] {
+    height: 4rem;
+    
+    background-color: #255aff;
+    color: #fff;
+
+    border-radius: 0.7rem;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #255aff;
+    color: #fff;
+
+    padding-block: 5rem;
+}
+
+footer p {
+    font-size: 1.4rem;
+} 
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer ul li a{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+footer ul li a:hover{
+    border-bottom: 2px solid #FFDD33;
+}
+
+footer ul li a.contact-btn {
+    background-color: #0F3FD3;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+/* Responsive =========================== */
+@media screen and (max-width: 768px) {
+    /* Menu Mobile*/
+
+    body.active {
+        overflow: hidden;
+    }
+
+    body.active header.menu {
+        padding-inline: 4rem;
+    }
+
+    header.menu nav ul {
+        display: none;
+    }
+
+    nav button#btnMobile {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    #nav.active ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: #0f3fd3;
+        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .picturesBrands {
+        flex-direction: column;
+        align-items: center;
+
+        padding-block: 2rem;
+    }
+    
+    .picturesBrands img {
+        width: 40%;
+    }
+
+    .differentials {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    section.benefits {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 7rem 0;
+    }
+
+    .benefits .benefitsList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        padding: 0 4%;
+        width: 100%;
+    }
+
+    .benefits .imgBenefits {
+        width: 100%;
+        margin-top: 2rem;;
+    }
+
+    #cards .card {
+        width: 60%;
+    }
+
+    .contact form {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+}
