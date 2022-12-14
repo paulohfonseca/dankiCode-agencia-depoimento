@@ -208,14 +208,14 @@ section.starProject .bannerProject {
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
+    
+    text-align: center;
 }
 
 .bannerProject h2{
     font-size: 4rem;
-    text-align: center;
     font-weight: normal;
     color: #ffffff;
 
